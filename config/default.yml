@@ -1,0 +1,4 @@
+generate:
+  root:  'contests'
+  spec_dir_flatten: false
+  spec_dir: 'spec'
