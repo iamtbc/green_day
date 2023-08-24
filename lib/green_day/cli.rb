@@ -5,6 +5,7 @@ require 'parallel'
 require 'colorize'
 require 'io/console'
 require_relative 'atcoder_client'
+require_relative 'config_loader'
 require_relative 'contest'
 require_relative 'test_builder'
 
