@@ -16,6 +16,21 @@ module GreenDay
       )
     end
 
+    def generate_root
+      # FIXME: default.yaml と役割が重複している
+      @hash.dig('generate', 'root') || '.'
+    end
+
+    def generate_spec_dir_flatten?
+      # FIXME: default.yaml と役割が重複している
+      @hash.dig('generate', 'spec_dir_flatten') || false
+    end
+
+    def generate_spec_dir
+      # FIXME: default.yaml と役割が重複している
+      @hash.dig('generate', 'spec_dir') || 'spec'
+    end
+
     private
 
     def deep_merge(config)
